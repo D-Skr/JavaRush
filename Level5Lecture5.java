@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Level5Levture5 {
+public class Level5Lecture5 {
 	// package com.javarush.task.pro.task05.task0511;
 	// int[][] multiArray. Scan first N integer as a number of strings
 	// scan N times numbers of elements for each string
