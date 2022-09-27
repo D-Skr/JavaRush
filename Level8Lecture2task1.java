@@ -37,5 +37,6 @@ public class Level8Lecture2task1 {
 		}
 
 		System.out.println("Min sum is: " + minSum);
+		scanner.close();
 	}
 }
