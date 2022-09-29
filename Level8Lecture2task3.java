@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Level8Lecture2task3 {
 	//package com.javarush.task.jdk13.task06.task0632;
+	
 	//char[][] array. Input number - hight of the pyramid.
 	//fill the pyramid and print it
 	//Example: for input 5 it should be like
