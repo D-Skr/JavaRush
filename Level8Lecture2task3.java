@@ -5,6 +5,7 @@ public class Level8Lecture2task3 {
 	//char[][] array. Input number - hight of the pyramid.
 	//fill the pyramid and print it
 	//Example: for input 5 it should be like
+	
 	//    #    
 	//   ###   
 	//  #####  
