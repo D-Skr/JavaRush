@@ -11,5 +11,11 @@ public class Level10Lectrure4 {
         System.out.println("Индекс первого символа последнего слова \"" + word + "\" равен - " + indexFromLastWord);
     }
 
+    public static int getIndexFromFirstWord(String string, String word) {
+        return string.indexOf(word);
+    }
 
+    public static int getIndexFromLastWord(String string, String word) {
+        return string.lastIndexOf(word);
+    }
 }
