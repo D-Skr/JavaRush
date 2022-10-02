@@ -1,6 +1,7 @@
 public class Level10Lectrure5task2 {
 
 	//package com.javarush.task.pro.task09.task0914;
+	
 	//update jdk path
 	
 	public static void main(String[] args) {
