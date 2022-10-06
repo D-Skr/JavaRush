@@ -16,7 +16,6 @@ public class Level10Lectrure5task2 {
         int lastIndex = path.indexOf("/", firstIndex);
         System.out.println(lastIndex);
         String oldJdk = path.substring(firstIndex, lastIndex);
-
         return path.replace(oldJdk, jdk);
     }
 }
