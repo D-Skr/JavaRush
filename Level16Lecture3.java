@@ -40,6 +40,7 @@ public class Level16Lecture3 {
 	        for(String s : elements){
 	            newArr[i++] = s;
 	        }
+	        //assign new array to ArrayList
 	        elements = newArr;
 	    }
 
