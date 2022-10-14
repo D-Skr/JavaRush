@@ -6,6 +6,8 @@ public class Level16Lecture3 {
 	
 	public static void main(String[] args) {
         CustomStringArrayList arrayList = new CustomStringArrayList();
+        //original capacity is 10
+        //our custom ArrayList extends dynamically
         for(int i = 0; i < 25; i++) {
             arrayList.add("count" + i);
         }
