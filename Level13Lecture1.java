@@ -3,10 +3,11 @@ import java.util.Iterator;
 
 public class Level13Lecture1 {
 	//package com.javarush.task.pro.task13.task1305;
-	//create ArrayLists with Strings
-	//Iterate through collection and remove String "bug"
+	//create ArrayLists with Strings.
+	//Iterate through collection and remove String "bug".
+	//just "for-each" iteration does not work here.
 	//use 3 different ways to remove it.
-	//case ignoring
+	//case ignoring.
 	
 	public static void main(String[] args) {
 		 ArrayList<String> words = new ArrayList<>();
@@ -35,6 +36,7 @@ public class Level13Lecture1 {
 
 	}
 	
+	
     public static void removeBugWithFor(ArrayList<String> list) {
     	for(int i = 0; i < list.size(); i++){
             if(list.get(i).equalsIgnoreCase("bug")){ 
@@ -44,7 +46,7 @@ public class Level13Lecture1 {
         }
     }
     
-    
+    //Explicit casting with Iterator object
     public static void removeBugWithWhile(ArrayList<String> list) {
         Iterator it = list.iterator();
         while(it.hasNext()){
