@@ -11,7 +11,7 @@ public class Level13Lecture1 {
 	//from same collection.
 	
 	//use 3 different ways to remove it.
-	//case ignoring.
+	//case ignoring: Bug, bUg, bug, BUG.
 	
 	public static void main(String[] args) {
 		 ArrayList<String> words = new ArrayList<>();
@@ -29,6 +29,8 @@ public class Level13Lecture1 {
 	        ArrayList<String> copyWordsThird = new ArrayList<>(words);
 	        
 	        removeBugWithFor(copyWordsFirst);
+	        removeBugWithWhile(copyWordsSecond);
+	        removeBugWithCopy(copyWordsThird);
 	        
 	        copyWordsFirst.forEach(System.out::println);
 	        String line = "~~~~~~~~~~";
@@ -60,4 +62,10 @@ public class Level13Lecture1 {
     }
 
     //Iterating through copy of collection and removing element from original collection.
+    public static void removeBugWithCopy(ArrayList<String> list) {
+        ArrayList<String> listCopy = new ArrayList<>(list);
+        for(String s : listCopy){
+            if(s.equalsIgnoreCase("bug")) list.remove(s);
+        }
+    }
 }
