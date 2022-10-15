@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Level13Lecture1 {
 	//package com.javarush.task.pro.task13.task1305;
@@ -40,6 +41,15 @@ public class Level13Lecture1 {
                 list.remove(i);
                 i--;
             }
+        }
+    }
+    
+    
+    public static void removeBugWithWhile(ArrayList<String> list) {
+        Iterator it = list.iterator();
+        while(it.hasNext()){
+            String s = (String)it.next();
+            if(s.equalsIgnoreCase("bug")) it.remove();
         }
     }
 
