@@ -5,7 +5,11 @@ public class Level13Lecture1 {
 	//package com.javarush.task.pro.task13.task1305;
 	//create ArrayLists with Strings.
 	//Iterate through collection and remove String "bug".
-	//just "for-each" iteration does not work here.
+	
+	//just "for-each" iteration does not work here
+	//because it is not possible to iterate and remove element 
+	//from same collection.
+	
 	//use 3 different ways to remove it.
 	//case ignoring.
 	
@@ -55,4 +59,5 @@ public class Level13Lecture1 {
         }
     }
 
+    //Iterating through copy of collection and removing element from original collection.
 }
