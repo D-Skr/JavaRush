@@ -22,6 +22,8 @@ public class Level13Lecture1 {
 	        ArrayList<String> copyWordsSecond = new ArrayList<>(words);
 	        ArrayList<String> copyWordsThird = new ArrayList<>(words);
 	        
+	        removeBugWithFor(copyWordsFirst);
+	        
 	        copyWordsFirst.forEach(System.out::println);
 	        String line = "~~~~~~~~~~";
 	        System.out.println(line);
@@ -31,5 +33,14 @@ public class Level13Lecture1 {
 	        System.out.println(line);
 
 	}
+	
+    public static void removeBugWithFor(ArrayList<String> list) {
+    	for(int i = 0; i < list.size(); i++){
+            if(list.get(i).equalsIgnoreCase("bug")){ 
+                list.remove(i);
+                i--;
+            }
+        }
+    }
 
 }
