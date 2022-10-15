@@ -36,7 +36,7 @@ public class Level13Lecture1 {
 
 	}
 	
-	
+	//"For" cycle for iterating through the collection
     public static void removeBugWithFor(ArrayList<String> list) {
     	for(int i = 0; i < list.size(); i++){
             if(list.get(i).equalsIgnoreCase("bug")){ 
@@ -46,7 +46,7 @@ public class Level13Lecture1 {
         }
     }
     
-    //Explicit casting with Iterator object
+    //Explicit casting with Iterator object for iterating through the collection
     public static void removeBugWithWhile(ArrayList<String> list) {
         Iterator it = list.iterator();
         while(it.hasNext()){
