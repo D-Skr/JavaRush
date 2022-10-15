@@ -21,6 +21,14 @@ public class Level13Lecture1 {
 	        ArrayList<String> copyWordsFirst = new ArrayList<>(words);
 	        ArrayList<String> copyWordsSecond = new ArrayList<>(words);
 	        ArrayList<String> copyWordsThird = new ArrayList<>(words);
+	        
+	        copyWordsFirst.forEach(System.out::println);
+	        String line = "~~~~~~~~~~";
+	        System.out.println(line);
+	        copyWordsSecond.forEach(System.out::println);
+	        System.out.println(line);
+	        copyWordsThird.forEach(System.out::println);
+	        System.out.println(line);
 
 	}
 
