@@ -66,6 +66,17 @@ public class Level18Lecture3 {
              list.remove(list.size() - 1);
          }
     }
+    
+    //Collections.shuffle(list);
+    public static void shuffle(ArrayList<Integer> list) {
+         Random rand = new Random();
+         for (int i = 0; i < list.size(); i++) {
+             int randomIndexToSwap = rand.nextInt(list.size());
+             int temp = list.get(randomIndexToSwap);
+             list.set(randomIndexToSwap, list.get(i));
+             list.set(i, temp);
+         }
+    }
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
