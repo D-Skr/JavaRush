@@ -77,6 +77,17 @@ public class Level18Lecture3 {
              list.set(i, temp);
          }
     }
+    
+    //Collections.min(list)
+    public static Integer min(ArrayList<Integer> list) {
+         Integer minimum = list.get(0);
+         for (int i = 1; i < list.size(); i++) {
+             if (list.get(i) < minimum) {
+                 minimum = list.get(i);
+             }
+         }
+         return minimum;
+    }
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
