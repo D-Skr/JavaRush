@@ -43,6 +43,21 @@ public class Level18Lecture3 {
              list.set(j - i, integer);
          }
     }
+    
+    //Collections.sort(list);
+    public static void sort(ArrayList<Integer> list) {
+         int n = list.size();
+         int temp;
+         for (int i = 0; i < n; i++) {
+             for (int j = 1; j < (n - i); j++) {
+                 if (list.get(j - 1) > list.get(j)) {
+                     temp = list.get(j - 1);
+                     list.set(j - 1, list.get(j));
+                     list.set(j, temp);
+                 }
+             }
+         }
+    }
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
