@@ -99,6 +99,23 @@ public class Level18Lecture3 {
          }
         return maximum;
     }
+    
+    //Collections.frequency(list, element)
+    public static int frequency(ArrayList<Integer> list, Integer element) {
+         int frequency = 0;
+         if (element == null) {
+             for (Integer integer : list)
+                 if (integer == null)
+                     frequency++;
+         } else {
+             for (Integer integer : list) {
+                 if (integer.equals(element)) {
+                     frequency++;
+                 }
+             }
+         }
+         return frequency;
+    }
 
 
 	public static void main(String[] args) {
