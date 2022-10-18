@@ -58,6 +58,14 @@ public class Level18Lecture3 {
              }
          }
     }
+    
+    //Collections.rotate(list, distance);
+    public static void rotate(ArrayList<Integer> list, int distance) {
+         for (int i = 0; i < distance; i++) {
+             list.add(0, list.get(list.size() - 1));
+             list.remove(list.size() - 1);
+         }
+    }
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
