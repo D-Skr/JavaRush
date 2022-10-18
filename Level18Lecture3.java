@@ -88,6 +88,18 @@ public class Level18Lecture3 {
          }
          return minimum;
     }
+    
+    //Collections.max(list)
+    public static Integer max(ArrayList<Integer> list) {
+         Integer maximum = list.get(0);
+         for (int i = 1; i < list.size(); i++) {
+             if (list.get(i) > maximum) {
+                 maximum = list.get(i);
+             }
+         }
+        return maximum;
+    }
+
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
