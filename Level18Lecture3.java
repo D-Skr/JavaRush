@@ -34,6 +34,15 @@ public class Level18Lecture3 {
              }
          }
     }
+    
+    //Collections.reverse(list);
+    public static void reverse(ArrayList<Integer> list) {
+         for (int i = 0, j = list.size() - 1; i < list.size() / 2; i++) {
+             Integer integer = list.get(i);
+             list.set(i, list.get(j - i));
+             list.set(j - i, integer);
+         }
+    }
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
