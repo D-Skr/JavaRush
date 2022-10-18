@@ -24,6 +24,16 @@ public class Level18Lecture3 {
              list.add(string);
          }
     }
+    
+    //Collections.replaceAll(list, oldValue, newValue);
+    public static void replaceAll(ArrayList<String> list, String oldValue, String newValue) {
+         for (int i = 0; i < list.size(); i++) {
+             String string = list.get(i);
+             if(string.equals(oldValue)) {
+                 list.set(i, newValue);
+             }
+         }
+    }
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
