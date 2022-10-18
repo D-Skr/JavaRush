@@ -17,6 +17,13 @@ public class Level18Lecture3 {
 			destination.set(i, source.get(i));
 		}
 	}
+	
+	//Collections.addAll(list,strings);
+    public static void addAll(ArrayList<String> list, String... strings) {
+         for (String string : strings) {
+             list.add(string);
+         }
+    }
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
