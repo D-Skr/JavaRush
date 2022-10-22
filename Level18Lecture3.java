@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Random;
 
@@ -139,7 +140,9 @@ public class Level18Lecture3 {
     }
 
 	public static void main(String[] args) {
-
+		
+		ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(5,-4,3,44,-100,50,99,-123,8888));
+		
 	}
 
 }
